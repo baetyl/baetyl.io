@@ -1,0 +1,52 @@
+<div class="container-fluid content-wrapper">
+    <div class="home-banner row">
+        <i class="logo"></i>
+        <h1>{% translate title layoutHome %}</h1>
+    </div>
+    <div class="home-features row">
+        <div class="col-lg-3 feature">
+            <a href="/{{config.locale}}/docs/overview/Baetyl-open-framework">
+                <i class="icon icon-open"></i>
+                <h3>{% translate open layoutHome %}</h3>
+                <p>
+                    {% translate openDesc layoutHome %}
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-3 feature">
+            <a href="/{{config.locale}}/docs/overview/Baetyl-extension">
+                <i class="icon icon-extend"></i>
+                <h3>{% translate extend layoutHome %}</h3>
+                <p>
+                    {% translate extendDesc layoutHome %}
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-3 feature">
+            <a href="/{{config.locale}}/docs/overview/Baetyl-security">
+                <i class="icon icon-safe"></i>
+                <h3>{% translate secure layoutHome %}</h3>
+                <p>
+                    {% translate secureDesc layoutHome %}
+                </p>
+            </a>
+        </div>
+        <div class="col-lg-3 feature">
+            <a href="/{{config.locale}}/docs/overview/Baetyl-control">
+                <i class="icon icon-control"></i>
+                <h3>{% translate control layoutHome %}</h3>
+                <p>
+                    {% translate controlDesc layoutHome %}
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="home-operations row">
+        <div class="col-lg-6">
+            <a href="/{{config.locale}}{{config.firstMapping.about}}" class="btn btn-primary">{% translate learnMore layoutHome %}</a>
+        </div>
+        <div class="col-lg-6">
+            <a href="/{{config.locale}}/docs/setup/Quick-Install" class="btn btn-primary">{% translate install layoutHome %}</a>
+        </div>
+    </div>
+</div>

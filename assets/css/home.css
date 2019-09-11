@@ -1,0 +1,215 @@
+/**
+ * @file src/themes/default/public/styles/home.css 首页样式
+ * @author chenqiang(chenqiang03@baidu.com)
+ */
+
+.page-home .container-fluid {
+    padding: 0;
+}
+
+.home-banner {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    padding-top: 60px;
+    background: url(../images/banner_v2.jpg) center 0 no-repeat;
+    background-size: 1920px 200px;
+}
+
+.home-banner .logo {
+    display: block;
+    width: 133px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(../images/baetyl.svg) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.home-banner h1 {
+    opacity: .8;
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.home-features {
+    margin: 0 auto;
+    padding: 84px 60px 70px;
+    max-width: 1265px;
+}
+
+.home-features .feature {
+    text-align: center;
+    height: 420px;
+    cursor: pointer;
+}
+
+.home-features .feature:hover {
+    border: 1px solid rgba(151,151,151,0.10);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .1);
+    border-radius: 2px;
+}
+
+.home-features .feature a {
+    text-decoration: none;
+}
+
+.home-features .feature .icon {
+    margin: 60px auto 0;
+    width: 119px;
+    height: 102px;
+    display: block;
+}
+
+.home-features .feature .icon.icon-open {
+    background: url(../images/open.png) 7px 6px no-repeat;
+    background-size: 105px 89px;
+}
+
+.home-features .feature .icon.icon-extend {
+    background: url(../images/extend.png) 1px 8px no-repeat;
+    background-size: 117px 86px;
+}
+
+.home-features .feature .icon.icon-safe {
+    background: url(../images/safe.png) 0 0 no-repeat;
+    background-size: 119px 102px;
+}
+
+.home-features .feature .icon.icon-control {
+    background: url(../images/control.png) 11px 8px no-repeat;
+    background-size: 97px 85px;
+}
+
+.home-features .feature h3 {
+    font-size: 30px;
+    font-weight: 400;
+    height: 42px;
+    line-height: 42px;
+    margin: 36px 0 30px;
+    color: #464d58;
+    position: relative;
+}
+
+.home-features .feature h3:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #336bbf;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -6px;
+}
+
+.home-features .feature p {
+    font-size: 1.4rem;
+    color: #999;
+    text-align: center;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.home-operations {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 1265px;
+}
+
+.home-operations .btn {
+    padding: 0;
+    border: 0;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 0;
+    background: #336bbf;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+    border-radius: 4px;
+    -webkit-transition: background-color .3s;
+       -moz-transition: background-color .3s;
+         -o-transition: background-color .3s;
+            transition: background-color .3s;
+}
+
+.home-operations .btn:hover {
+    border: 0;
+    background-color: #4b93ff;
+}
+
+@media (max-width: 768px) {
+    .home-banner {
+        height: 280px;
+        padding: 60px;
+        background: url(../images/banner_v2.jpg) center -40px no-repeat;
+        background-size: 3020px 320px;
+    }
+
+    .home-banner h1 {
+        margin-top: 40px;
+    }
+
+    .home-features {
+        margin: 15px;
+        padding: 0;
+    }
+
+    .home-features .feature {
+        border: 1px solid rgba(151, 151, 151, .1);
+        box-shadow:  0 2px 10px 0 rgba(0, 0, 0, .1);
+        border-radius: 2px;
+        min-height: 280px;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .home-features .feature .icon {
+        margin: 20px auto 0;
+        width: 70px;
+        height: 60px;
+        display: block;
+    }
+
+    .home-features .feature .icon.icon-open {
+        background: url(../images/open.png) 0 0 no-repeat;
+        background-size: 65px 55px;
+    }
+
+    .home-features .feature .icon.icon-extend {
+        background: url(../images/extend.png) 1px 8px no-repeat;
+        background-size: 68px 50px;
+    }
+
+    .home-features .feature .icon.icon-safe {
+        background: url(../images/safe.png) 0 0 no-repeat;
+        background-size: 70px 60px;
+    }
+
+    .home-features .feature .icon.icon-control {
+        background: url(../images/control.png) 2px 0 no-repeat;
+        background-size: 63px 55px;
+    }
+
+    .home-features .feature h3 {
+        font-size: 16px;
+    }
+
+    .home-features .feature p {
+        margin: 0 10px;
+    }
+
+    .home-operations {
+        padding-bottom: 20px;
+    }
+
+    .home-operations .btn {
+        width: 100%;
+    }
+}

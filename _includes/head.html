@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Baetyl</title>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% endif %}">
+  <meta content="Matt Cone and contributors" name=author>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="Baetyl" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% endif %}" />
+  <meta property="og:image" content="https://www.markdownguide.org/assets/images/markdown-guide-og.jpg" />
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/github-gist.css">
+  <link rel="stylesheet" href="/assets/css/normalize.min.css">
+  <link rel="stylesheet" href="/assets/css/ghostdown.min.css">
+  <link rel="stylesheet" href="/assets/css/common.css">
+
+  {% if page.title == 'Home' or page.title == '404 Not Found' %}
+  <link href="/assets/css/home.css" rel="stylesheet">
+  {% else %}
+  <link href="/assets/css/page.css" rel="stylesheet">
+  {% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+
+  <script src="/assets/scripts/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap.bundle.min.js"></script>
+  <script src="/assets/javascript/bootstrap-toc.min.js"></script>
+  <script defer src="/assets/javascript/solid.min.js"></script>
+  <script defer src="/assets/javascript/fontawesome.min.js"></script>
+
+  <script src="/assets/scripts/ghostdown.min.js"></script>
+  <script src="/assets/scripts/common.js"></script>
+
+</head>
