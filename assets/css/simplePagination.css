@@ -1,0 +1,97 @@
+/**
+ * @file src/themes/default/public/styles/simplePagination.css
+ * @author chenqiang(chenqiang03@baidu.com)
+ */
+
+.simple-pagination {
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.simple-pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.simple-pagination li {
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.simple-pagination li:first-child {
+    margin-left: 0;
+}
+
+.simple-pagination li span {
+    color: #888;
+    display: block;
+    padding: 0 8px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    -webkit-transition: all .3s;
+       -moz-transition: all .3s;
+         -o-transition: all .3s;
+            transition: all .3s;
+}
+
+.simple-pagination li span.current {
+    color: #fff;
+    background-color: #4b93ff;
+    border-color: #4b93ff;
+}
+
+.simple-pagination span.ellipse.clickable {
+    cursor: pointer;
+}
+
+.simple-pagination .ellipse input {
+    width: 3em;
+}
+
+.simple-pagination .ellipse {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: bold;
+    cursor: default;
+}
+
+.simple-pagination a:hover,
+.simple-pagination li:not(.disabled):not(.active) span:hover {
+    text-decoration: none;
+    color: #fff;
+    border-color: #4b93ff;
+    background-color: #4b93ff;
+}
+
+.simple-pagination li.disabled a,
+.simple-pagination li.disabled a:hover,
+.simple-pagination li.disabled a:focus,
+.simple-pagination li.disabled a:active,
+.simple-pagination li.disabled a:visited,
+.simple-pagination li.disabled span {
+    background-color: #ddd;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+.simple-pagination li .prev,
+.simple-pagination li .next {
+    line-height: 28px;
+}
+
