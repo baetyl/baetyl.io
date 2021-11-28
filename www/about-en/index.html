@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Baetyl</title>
+
+  <meta name="description" content="Learn all about Baetyl.">
+  <meta content="Matt Cone and contributors" name=author>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://baetyl.io//about-en/" />
+  <meta property="og:title" content="Baetyl" />
+  <meta property="og:description" content="Learn all about Baetyl." />
+  <meta property="og:image" content="https://www.markdownguide.org/assets/images/markdown-guide-og.jpg" />
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-toc.min.css">
+  <link rel="stylesheet" href="/assets/css/github-gist.css">
+  <link rel="stylesheet" href="/assets/css/normalize.min.css">
+  <link rel="stylesheet" href="/assets/css/ghostdown.min.css">
+  <link rel="stylesheet" href="/assets/css/common.css">
+
+  
+  <link href="/assets/css/page.css" rel="stylesheet">
+  
+
+  <link rel="canonical" href="https://baetyl.io//about-en/">
+
+
+  <script src="/assets/scripts/jquery.min.js"></script>
+  <script src="/assets/javascript/bootstrap.bundle.min.js"></script>
+  <script src="/assets/javascript/bootstrap-toc.min.js"></script>
+  <script defer src="/assets/javascript/solid.min.js"></script>
+  <script defer src="/assets/javascript/fontawesome.min.js"></script>
+
+  <script src="/assets/scripts/ghostdown.min.js"></script>
+  <script src="/assets/scripts/common.js"></script>
+
+</head>
+
+  <body data-spy="scroll" data-target="#toc">
+    <header class="header">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-2">
+              <a href="/zh/" class="logo"></a>
+              <span>Baetyl</span>
+          </div>
+          <div class="locale pull-right">
+              <ul>
+                  <li class="locale-btn">
+                      <a style="color: #3692ff">中文版</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="nav pull-right">
+              <ul>
+                  <li class="">
+                      <a href="/docs/en/latest">Docs</a>
+                  </li>
+                  
+                  <li class="">
+                      <a href="https://lists.lfedge.org/g/baetyl/topics" target="_blank">Community</a>
+                  </li>
+                
+                  <li class="">
+                      <a href="/about-en">About</a>
+                  </li>
+                  <li>
+                      <a href="https://github.com/baetyl/baetyl" target="_blank">Github</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</header>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-12 col-md-9">
+          <h2 id="join-the-community">Join the community</h2>
+
+<p>As the first open edge computing framework in China, Baetyl aims to create a lightweight, secure, reliable and scalable edge computing community that will create a good ecological environment. Here, we offer the following options for you to choose from:</p>
+
+<ul>
+  <li>If you want to participate in Baetyl’s daily development communication, you are welcome to join <a href="https://baetyl.bj.bcebos.com/Wechat/Wechat-Baetyl.png">Wechat-for-Baetyl</a></li>
+  <li>If you have more about feature requirements or bug feedback of Baetyl, please <a href="https://github.com/baetyl/baetyl/issues">Submit an issue</a></li>
+  <li>If you want to know more about Baetyl and other services of Baidu Cloud, please visit <a href="https://cloud.baidu.com/forum/bce">Baidu-Cloud-forum</a></li>
+  <li>If you want to know more about Cloud Management Suite of BIE, please visit: <a href="https://cloud.baidu.com/product/bie.html">Baidu-IntelliEdge</a></li>
+  <li>If you have better development advice about Baetyl, please contact us: <a href="mailto:baetyl@lists.lfedge.org">baetyl@lists.lfedge.org</a></li>
+</ul>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Welcome to Baetyl of Baidu Open Source Project. To contribute to Baetyl, please follow the process below.</p>
+
+<p>We sincerely appreciate your contribution. This document explains our workflow and work style.</p>
+
+<h3 id="workflow">Workflow</h3>
+
+<p>Baetyl use this <a href="https://nvie.com/posts/a-successful-git-branching-model/">Git branching model</a>. The following steps guide usual contributions.</p>
+
+<ol>
+  <li>
+    <p>Fork</p>
+
+    <p>Our development community has been growing fast, so we encourage developers to submit code. And please file Pull Requests from your fork. To make a fork, please refer to Github page and click on the <a href="https://help.github.com/articles/fork-a-repo/">“Fork” button</a>.</p>
+  </li>
+  <li>
+    <p>Prepare for the development environment</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>go get github.com/baetyl/baetyl <span class="c"># clone baetyl official repository</span>
+<span class="nb">cd</span> <span class="nv">$GOPATH</span>/src/github.com/baetyl/baetyl <span class="c"># step into baetyl</span>
+git checkout master  <span class="c"># verify master branch</span>
+git remote add fork https://github.com/&lt;your_github_account&gt;/baetyl  <span class="c"># specify remote repository</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Push changes to your forked repository</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git status   <span class="c"># view current code change status</span>
+git add <span class="nb">.</span>    <span class="c"># add all local changes</span>
+git commit <span class="nt">-c</span> <span class="s2">"modify description"</span>  <span class="c"># commit changes with comment</span>
+git push fork <span class="c"># push code changes to remote repository which specifies your forked repository</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Create pull request</p>
+
+    <p>You can push and file a pull request to Baetyl official repository <a href="https://github.com/baetyl/baetyl">https://github.com/baetyl/baetyl</a>. To create a pull request, please follow <a href="https://help.github.com/articles/creating-a-pull-request/">these steps</a>. Once the Baetyl repository reviewer approves and merges your pull request, you will see the code which contributed by you in the Baetyl official repository.</p>
+  </li>
+</ol>
+
+<h3 id="code-review">Code Review</h3>
+
+<ul>
+  <li>About Golang format, please refer to <a href="https://github.com/golang/go/wiki/CodeReviewComments">Go Code Review Comments</a>.</li>
+  <li>Please feel free to ping your reviewers by sending them the URL of your pull request via email. Please do this after your pull request passes the CI.</li>
+  <li>Please answer reviewers’ every comment. If you are to follow the comment, please write “Done”; please give a reason otherwise.</li>
+  <li>If you don’t want your reviewers to get overwhelmed by email notifications, you might reply their comments by <a href="https://help.github.com/articles/reviewing-proposed-changes-in-a-pull-request/">in a batch</a>.</li>
+  <li>Reduce the unnecessary commits. Some developers commit often. It is recommended to append a sequence of small changes into one commit by running <code class="highlighter-rouge">git commit --amend</code> instead of <code class="highlighter-rouge">git commit</code>.</li>
+</ul>
+
+<h3 id="merge-rule">Merge Rule</h3>
+
+<ul>
+  <li>Please run command <code class="highlighter-rouge">govendor fmt +local</code> before push changes, more details refer to <a href="https://github.com/kardianos/govendor">govendor</a></li>
+  <li>Must run command <code class="highlighter-rouge">make test</code> before push changes(unit test should be contained), and make sure all unit test and data race test passed</li>
+  <li>Only the passed(unit test and data race test) code can be allowed to submit to Baetyl official repository</li>
+  <li>At least one reviewer approved code can be merged into Baetyl official repository</li>
+</ul>
+
+<h2 id="contact-us">Contact us</h2>
+
+<p>In order to create a better iteration and development of Baetyl, if you have better advice about Baetyl, please contact us:</p>
+
+<blockquote>
+  <p>Baetyl official e-mail：<a href="mailto:baetyl@lists.lfedge.org">baetyl@lists.lfedge.org</a></p>
+</blockquote>
+
+
+        </div>
+        <div class="col-md-3 d-none d-md-block" id="sidebar">
+          <nav id="toc" data-toggle="toc" class="sticky-top" style="z-index:1"></nav>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="container-fluid">
+      <ul>
+          <li>
+              <a href="mailto:baetyl@lists.lfedge.org" class="email"></a>
+          </li>
+          <li>
+              <a href="https://github.com/baetyl/baetyl" class="github"></a>
+          </li>
+      </ul>
+  </div>
+</footer>
+<script type="text/javascript" src="/assets/javascript/anchor.min.js"></script>
+<!-- <script>
+  anchors.options = {
+  placement: 'right',
+  };
+  anchors.add('h1, h2, h3, h4, h5').remove('.no-anchor');
+</script> -->
+
+<!-- for search -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+docsearch({
+apiKey: '0125ba824e95b21d36ae268518067391',
+indexName: 'markdownguide',
+inputSelector: '#search-input',
+debug: false // Set debug to true if you want to inspect the dropdown
+});
+</script> -->
+
+  </body>
+</html>

@@ -1,0 +1,3 @@
+FROM debian:stable
+RUN apt-get update && apt-get install -y pip
+RUN pip install sphinx sphinx_rtd_theme recommonmark sphinx-markdown-tables==0.0.9
