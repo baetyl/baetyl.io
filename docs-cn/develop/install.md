@@ -11,7 +11,7 @@
 - 使用k8s或helm安装时，由于采用nodeport映射，请修改scripts/sql/data.sql中baetyl_property表中
   sync和init address中的端口号为30005和30003。
 
-- 请先编译本地镜像，可以直接在项目根目录运行`make image`，并确保镜像tag与后续helm以及k8s安装的tag一致。具体编译流程和方法请参照编译章节。
+- 如需编译本地镜像，可以直接在项目根目录运行`docker build -t baetyl-cloud:local-build -f Dockerfile-local .`，并确保镜像tag与后续helm以及k8s安装的tag一致。具体编译流程和方法请参照编译章节。
 
 ## 声明
 
@@ -25,15 +25,15 @@ Server Version: version.Info{Major:"1", Minor:"15", GitVersion:"v1.15.5", GitCom
 - 撰写本文使用 baetyl-cloud 版本信息如下：
 ```
 // git log
-commit dd37b0f7d15d1a1b7953aaaaf4be6aba55e13574 (HEAD -> master, tag: v2.2.1-rc11)
+commit 94728708cd2b775a124f6ed083ee3ad2779621e5 (HEAD -> master)
 Author: hannatao <413024870@qq.com>
-Date:   Mon Jul 12 15:00:41 2021 +0800
+Date:   Thu Jun 16 15:05:54 2022 +0800
 
-    Change goproxy and sql (#330)
+    Update Readme.md
 ```
-因为 baetyl-cloud 代码在快速迭代，最新的代码无法做到实时适配。所以用户在下载 baetyl-cloud 代码后需要切换到此版本：
+因为 baetyl-cloud 代码在快速迭代，最新的代码可能无法做到实时适配。建议在下载 baetyl-cloud 代码后需要切换到此版本：
 ```shell script
-git reset --hard dd37b0f7d15
+git reset --hard 94728708cd
 ```
 另外本文会定期更新来适配最新的 baetyl-cloud 代码。
 
