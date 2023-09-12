@@ -40,6 +40,7 @@ Baetyl，将计算、数据和服务从中心无缝延伸到边缘。
 
    practice/application-deployment-practice.md
    practice/modbus.md
+   practice/ERNIE-Bot.md
 
 .. toctree::
    :maxdepth: 1
